@@ -1,16 +1,16 @@
-package com.solarx.myapplication.ui.dashboard;
+package com.solarx.myapplication.ViewModel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class DashboardViewModel extends ViewModel {
+public class FavoriteViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public DashboardViewModel() {
+    public FavoriteViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is a fragment");
     }
 
     public LiveData<String> getText() {
